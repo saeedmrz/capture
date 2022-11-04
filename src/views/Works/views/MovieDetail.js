@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
-import { MovieState } from "../movieState";
+import { MovieState } from "../../../data/movieState";
 // Animations
 import { motion } from "framer-motion";
-import { pageAnimation } from "../animation";
+import { pageAnimation } from "../../../styles/animation";
 
 const MovieDetail = () => {
   const history = useHistory();

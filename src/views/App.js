@@ -1,15 +1,14 @@
 import React from "react";
 // Global style
-import GlobalStyle from "./components/GlobalStyle";
+import GlobalStyle from "../styles/GlobalStyle";
 // Import pages
-import AboutUs from "./pages/AboutUs";
-import ContactUs from "./pages/ContactUs";
-import OurWork from "./pages/OurWork";
-import Nav from "./components/Nav";
-import Moviedetail from "./pages/MovieDetail";
+import AboutUs from "./AboutUs/AboutUs";
+import ContactUs from "./ContactUs/ContactUs";
+import OurWork from "./Works/OurWork";
+import Nav from "../components/Nav";
+import MovieDetail from "./Works/views/MovieDetail";
 //Router
 import { Switch, Route, useLocation } from "react-router-dom";
-import MovieDetail from "./pages/MovieDetail";
 // Animation
 import { AnimatePresence, AnimationPresence } from "framer-motion";
 
@@ -18,7 +17,6 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>

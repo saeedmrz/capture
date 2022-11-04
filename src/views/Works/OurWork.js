@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 //Images
-import athlete from "../img/athlete-small.jpg";
-import theracer from "../img/theracer-small.jpg";
-import goodtimes from "../img/goodtimes-small.jpg";
+import athlete from "../../assets/img/athlete-small.jpg";
+import theracer from "../../assets/img/theracer-small.jpg";
+import goodtimes from "../../assets/img/goodtimes-small.jpg";
 // Animations
 import { motion } from "framer-motion";
 import {
@@ -14,9 +14,9 @@ import {
   fade,
   photoAnim,
   lineAnim,
-} from "../animation";
-import { useScroll } from "../components/useScroll";
-import ScrollTop from "../components/ScrollTop";
+} from "../../styles/animation";
+import { useScroll } from "../../hooks/useScroll";
+import ScrollTop from "../../components/ScrollTop";
 
 const OurWork = () => {
   const [element, controls] = useScroll();

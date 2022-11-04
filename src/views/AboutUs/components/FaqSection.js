@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { About } from "../styles";
-import Toggle from "./Toggle";
+import { About } from "../../../styles/styles";
+import Toggle from "../../../components/Toggle";
 import { AnimateSharedLayout } from "framer-motion";
-import { useScroll } from "./useScroll";
-import { scrollReveal } from "../animation";
+import { useScroll } from "../../../hooks/useScroll";
+import { scrollReveal } from "../../../styles/animation";
 
 const FaqSection = () => {
   const [element, controls] = useScroll();

@@ -1,16 +1,16 @@
 import React from "react";
 // Import icons
-import clock from "../img/clock.svg";
-import diaphragm from "../img/diaphragm.svg";
-import money from "../img/money.svg";
-import teamwork from "../img/teamwork.svg";
-import home2 from "../img/home2.jpg";
+import clock from "../../../../assets/img/clock.svg";
+import diaphragm from "../../../../assets/img/diaphragm.svg";
+import money from "../../../../assets/img/money.svg";
+import teamwork from "../../../../assets/img/teamwork.svg";
+import home2 from "../../../../assets/img/home2.jpg";
 // Styles
-import { About, Description, Image } from "../styles";
-import styled from "styled-components";
-import { fade } from "../animation";
-import { useScroll } from "./useScroll";
-import { scrollReveal } from "../animation";
+import { Services, Cards, Card } from "./style";
+import { About, Description, Image } from "../../../../styles/styles";
+import { fade } from "../../../../styles/animation";
+import { useScroll } from "../../../../hooks/useScroll";
+import { scrollReveal } from "../../../../styles/animation";
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
@@ -26,13 +26,15 @@ const ServicesSection = () => {
           High <span>quality</span> services
         </h2>
         <Cards>
-          <div className="card">
-            <div className="icon">
-              <img src={clock} alt="Icon" />
-              <h3>Efficient</h3>
+          <Card>
+            <div className="card">
+              <div className="icon">
+                <img src={clock} alt="Icon" />
+                <h3>Efficient</h3>
+              </div>
+              <p>Lorem ipsum dolor sit amet.</p>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
+          </Card>
           <Card>
             <div className="icon">
               <img src={teamwork} alt="Icon" />
@@ -62,35 +64,5 @@ const ServicesSection = () => {
     </Services>
   );
 };
-
-const Services = styled(About)`
-  h2 {
-    padding-bottom: 5rem;
-  }
-  p {
-    width: 70%;
-    padding: 2rem 0rem 4rem 0rem;
-  }
-`;
-const Cards = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  @media (max-width: 1300px) {
-    justify-content: center;
-  }
-`;
-const Card = styled.div`
-  flex-basis: 20rem;
-  .icon {
-    display: flex;
-    align-items: center;
-    h3 {
-      margin-left: 1rem;
-      background: white;
-      color: black;
-      padding: 1rem;
-    }
-  }
-`;
 
 export default ServicesSection;
