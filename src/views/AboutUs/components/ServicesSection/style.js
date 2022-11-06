@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { About } from "../../../../styles/styles";
+import { About } from "styles/styles";
 
 export const Services = styled(About)`
   h2 {

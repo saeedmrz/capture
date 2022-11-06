@@ -1,10 +1,9 @@
-import React from "react";
-import home1 from "../../../assets/img/home1.jpg";
-import { About, Description, Image, Hide } from "../../../styles/styles";
+import home1 from "assets/img/home1.jpg";
+import { About, Description, Image, Hide } from "styles/styles";
 // Framer motion
 import { motion } from "framer-motion";
-import { titleAnim, fade, photoAnim } from "../../../styles/animation";
-import Wave from "../../../components/Wave";
+import { titleAnim, fade, photoAnim } from "styles/animation";
+import Wave from "components/Wave/Wave";
 
 const AboutSection = () => {
   return (

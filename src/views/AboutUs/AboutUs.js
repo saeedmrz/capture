@@ -1,12 +1,11 @@
-import React from "react";
 // Page components
-import AboutSection from "./components/AboutSection";
+import AboutSection from "./components/AboutSection/AboutSection.js";
 import ServicesSection from "./components/ServicesSection/ServicesSection.js";
-import FaqSection from "./components/FaqSection";
+import FaqSection from "./components/FaqSection/FaqSection";
 // Animations
 import { motion } from "framer-motion";
-import { pageAnimation } from "../../styles/animation";
-import ScrollTop from "../../components/ScrollTop";
+import { pageAnimation } from "styles/animation";
+import ScrollTop from "components/common/ScrollTop";
 
 const AboutUs = () => {
   return (

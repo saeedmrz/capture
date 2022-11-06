@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { colors } from "./styles";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -25,13 +26,13 @@ button{
     font-size: 1.1.rem;
     cursor: pointer;
     padding: 1rem 2rem;
-    border: 3px solid #23d997;
+    border: 3px solid ${colors.primary};
     background: transparent;
     color: white;
     transition: all 0.5s ease;
     font-family: 'Inter', sans-serif;
     &:hover{
-        background-color: #23d997;
+        background-color: ${colors.primary};
         color: white;
     }
 }
@@ -52,7 +53,7 @@ button{
     }
     span{
         font-weight: bold;
-        color:#23d997;
+        color:${colors.primary};
     }
     p{
         padding: 3rem 0rem;

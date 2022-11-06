@@ -1,16 +1,14 @@
-import React from "react";
 // Import icons
-import clock from "../../../../assets/img/clock.svg";
-import diaphragm from "../../../../assets/img/diaphragm.svg";
-import money from "../../../../assets/img/money.svg";
-import teamwork from "../../../../assets/img/teamwork.svg";
-import home2 from "../../../../assets/img/home2.jpg";
+import clock from "assets/img/clock.svg";
+import diaphragm from "assets/img/diaphragm.svg";
+import money from "assets/img/money.svg";
+import teamwork from "assets/img/teamwork.svg";
+import home2 from "assets/img/home2.jpg";
 // Styles
 import { Services, Cards, Card } from "./style";
-import { About, Description, Image } from "../../../../styles/styles";
-import { fade } from "../../../../styles/animation";
-import { useScroll } from "../../../../hooks/useScroll";
-import { scrollReveal } from "../../../../styles/animation";
+import { Description, Image } from "styles/styles";
+import { useScroll } from "hooks/useScroll";
+import { scrollReveal } from "styles/animation";
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();

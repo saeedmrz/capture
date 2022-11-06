@@ -1,10 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { About } from "../../../styles/styles";
-import Toggle from "../../../components/Toggle";
+import { Faq } from "./FaqSection.styles";
+import Toggle from "components/common/Toggle";
 import { AnimateSharedLayout } from "framer-motion";
-import { useScroll } from "../../../hooks/useScroll";
-import { scrollReveal } from "../../../styles/animation";
+import { useScroll } from "hooks/useScroll";
+import { scrollReveal } from "styles/animation";
 
 const FaqSection = () => {
   const [element, controls] = useScroll();
@@ -60,32 +58,5 @@ const FaqSection = () => {
     </Faq>
   );
 };
-
-const Faq = styled(About)`
-  display: block;
-  span {
-    display: block;
-  }
-  h2 {
-    padding-bottom: 2rem;
-    font-weight: lighter;
-  }
-  .faq-line {
-    background: #cccccc;
-    height: 0.2rem;
-    margin: 2rem 0rem;
-    width: 100%;
-  }
-  .question {
-    padding: 3rem 0rem;
-    cursor: pointer;
-  }
-  .answer {
-    padding: 2rem 0rem;
-    p {
-      padding: 1rem 0rem;
-    }
-  }
-`;
 
 export default FaqSection;

@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+// Styles
+import { WaveSvg } from "./Wave.styles";
 import { motion } from "framer-motion";
 
 const Wave = () => {
@@ -21,11 +21,5 @@ const Wave = () => {
     </WaveSvg>
   );
 };
-
-const WaveSvg = styled.svg`
-  position: absolute;
-  left: 0;
-  z-index: 1;
-`;
 
 export default Wave;
