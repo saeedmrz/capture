@@ -1,3 +1,6 @@
 # React Capture app
 
-This project is a portfolio project built with react.
+Simple portfolio project using React.
+
+### Technologies
+React | Framer | StyledComponents
